@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap: https://<username>.github.io/<repo>/sitemap.xml
+# ↑ デプロイ後、実際のURLに書き換えてください
