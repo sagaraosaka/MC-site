@@ -1,12 +1,22 @@
+# README更新｜Claude Codeへの指示文
+
+---
+
+## 指示文（そのままClaude Codeに貼り付けて使う）
+
+---
+
+既存のREADME.mdを以下の内容に更新してください。
+既存の内容は一度確認した上で、必要な情報を残しつつ更新してください。
+
+---
+
+## 更新内容
+
+```markdown
 # KEY PRODUCE
 
 > 紀州のイベントをつくる
-
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![Google Fonts](https://img.shields.io/badge/Google%20Fonts-4285F4?style=flat&logo=google&logoColor=white)
-![Google Forms](https://img.shields.io/badge/Google%20Forms-7248B9?style=flat&logo=googleforms&logoColor=white)
 
 和歌山市を拠点としたイベントMC・イベント企画のWebサイトです。
 LPとして公開していたサイトを、マルチページのWebサイトへ移行しました。
@@ -50,7 +60,7 @@ LPとして公開していたサイトを、マルチページのWebサイトへ
 ## フォルダ構成
 
 ```
-MC-site/
+key-produce/
 ├── index.html          # TOP
 ├── service/
 │   └── index.html      # サービス・料金
@@ -72,24 +82,9 @@ MC-site/
 
 ---
 
-## ローカルで確認する方法
-
-フレームワーク不要の静的サイトです。以下のいずれかで確認できます。
-
-```bash
-# macOS の場合（直接開く）
-open index.html
-
-# Python が使える場合（推奨：リンク遷移も正確に確認できる）
-python3 -m http.server 8000
-# → http://localhost:8000 をブラウザで開く
-```
-
----
-
 ## 設計書
 
-詳細な設計は `docs/` フォルダを参照してください。
+詳細な設計はdocs/フォルダを参照してください。
 
 | ファイル | 内容 |
 |---|---|
@@ -104,4 +99,13 @@ python3 -m http.server 8000
 
 | 日付 | 内容 |
 |---|---|
-| 2026年3月 | LPをマルチページWebサイトへ移行・KEY PRODUCEとしてリニューアル |
+| 2025年 | LPをマルチページWebサイトへ移行・KEY PRODUCEとしてリニューアル |
+```
+
+---
+
+## 注意事項
+
+- 既存のREADME.mdがある場合は内容を確認してから上書きしてください
+- README.mdがない場合は新規作成してください
+- 更新後にプレビューを確認してください
