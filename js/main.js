@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <footer class="site-footer">
         <div class="container">
           <!-- 屋号：確定後に差し替え -->
-          <p class="footer-logo">【KEY PRODUCE】</p>
+          <a class="footer-logo" href="${base}index.html">【KEY PRODUCE】</a>
           <p class="footer-sub">紀州のイベントをつくる</p>
           <ul class="footer-links">
             <!-- Instagram リンク（アカウント確定後に解除）
