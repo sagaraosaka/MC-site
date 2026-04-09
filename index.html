@@ -10,7 +10,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/components.css" />
@@ -28,166 +28,149 @@
       <div class="hero-bg">
         <img
           src="assets/images/hero-wakayama-local-event.jpg"
-          alt="和歌山市の屋外イベント会場、ステージ上からの風景"
+          alt="和歌山市の屋外イベント会場、多くの来場者が集まる様子"
           loading="eager"
           fetchpriority="high"
         />
       </div>
       <div class="hero-inner">
-        <div class="container">
-          <div class="hero-content">
-            <p class="hero-eyebrow">Local Events MC / Wakayama</p>
+        <div class="container" style="text-align: center;">
+          <div class="hero-text">
             <h1 class="hero-title" id="hero-title">
-              このまちだから、<br>
-              盛り上がる。
+              このまちだから、<br>盛り上がる。
             </h1>
             <p class="hero-sub">
               参加しやすい声掛けと流れで、<br>
               イベントを"見る場"から"入る場"へ。
             </p>
-            <div class="hero-actions">
-              <a class="btn btn-fill btn-lg" href="service/index.html">サービスを見る</a>
-              <a class="btn btn-ghost btn-lg" href="contact/index.html">お問い合わせ</a>
-            </div>
-            <p class="hero-note">活動エリア：<strong>和歌山市</strong>（近隣はご相談ください）</p>
+          </div>
+          <div class="hero-actions" style="justify-content: center;">
+            <a class="btn btn-fill btn-lg" href="service/index.html">サービスを見る</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ─── 2. KEY PRODUCEとは ────────────── -->
-    <section class="section section-alt" aria-labelledby="about-heading">
-      <div class="container" data-reveal>
+    <section class="section" aria-labelledby="about-heading">
+      <div class="container" style="text-align: center;" data-reveal>
         <span class="section-label">About</span>
-        <h2 class="section-heading" id="about-heading">KEY PRODUCEとは</h2>
-        <p style="font-size: 1.05rem; line-height: 2; max-width: 58ch;">
+        <p class="about-text">
           和歌山を拠点に、MCとしてイベントの場をつくっています。<br>
           紀州のまちで、また来たいと思えるイベントを。
         </p>
       </div>
     </section>
 
-    <!-- ─── 3. 選ばれる理由 ────────────────── -->
-    <section class="section" aria-labelledby="reasons-heading">
-      <div class="container">
-        <div data-reveal>
-          <span class="section-label">Why KEY PRODUCE</span>
-          <h2 class="section-heading" id="reasons-heading">選ばれる理由</h2>
-        </div>
-        <div class="reasons-grid">
-          <article class="reason-card" data-reveal>
-            <p class="reason-number">01</p>
-            <h3 class="reason-title">地域密着の空気感</h3>
-            <p class="reason-body">
-              和歌山のまちを知っているからこそ、<br>
-              場の雰囲気をつかむことができる。
-            </p>
-          </article>
-          <article class="reason-card" data-reveal>
-            <p class="reason-number">02</p>
-            <h3 class="reason-title">「入る場」をつくる盛り上げ方</h3>
-            <p class="reason-body">
-              参加しやすい声掛けと流れで、<br>
-              見ているだけの場を参加したくなる場へ。
-            </p>
-          </article>
-          <article class="reason-card" data-reveal>
-            <p class="reason-number">03</p>
-            <h3 class="reason-title">打ち合わせ〜フォローまで一貫対応</h3>
-            <p class="reason-body">
-              事前の台本作成からリハーサル・当日・<br>
-              後日フォローアップまでサポート。
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ─── 4. サービス概要 ─────────────────── -->
-    <section class="section section-alt" aria-labelledby="service-heading">
+    <!-- ─── 3. サービス紹介 ─────────────────── -->
+    <section class="section section-white" aria-labelledby="service-heading">
       <div class="container" data-reveal>
         <span class="section-label">Service</span>
-        <h2 class="section-heading" id="service-heading">サービス概要</h2>
-        <div class="service-snippet">
-          <div>
-            <p class="service-snippet-name">MCプラン</p>
-            <p class="service-snippet-price">
-              ¥30,000〜 <small>（税別）</small>
-            </p>
-            <p class="service-snippet-desc">司会・進行のご依頼はこちら</p>
-          </div>
-          <div>
-            <a class="btn btn-fill" href="service/index.html">サービス・料金を見る</a>
-          </div>
+        <h2 class="section-heading" id="service-heading">サービス紹介</h2>
+        <div class="service-card">
+          <p class="service-card-name">MCプラン</p>
+          <p class="service-card-price">¥30,000〜 <small>（税別）</small></p>
+          <p class="service-card-desc">
+            事前打ち合わせから台本作成・当日MC・フォローまで、
+            ワンストップで対応します。
+          </p>
+          <a class="btn btn-fill" href="service/index.html">サービス・料金を見る</a>
         </div>
       </div>
     </section>
 
-    <!-- ─── 5. 実績ギャラリー ──────────────── -->
+    <!-- ─── 4. 実績ギャラリー ──────────────── -->
     <section class="section" aria-labelledby="gallery-heading">
-      <div class="container">
-        <div data-reveal>
-          <span class="section-label">Gallery</span>
-          <h2 class="section-heading" id="gallery-heading">実績ギャラリー</h2>
-        </div>
-        <div class="gallery-grid" data-reveal>
-          <figure class="gallery-item">
+      <div class="container" data-reveal>
+        <span class="section-label">Gallery</span>
+        <h2 class="section-heading" id="gallery-heading">実績ギャラリー</h2>
+
+        <!-- 1枚大きく＋3枚小さく（非対称グリッド） -->
+        <div class="gallery-asymmetric">
+          <div class="gallery-main">
             <img
               src="assets/images/hero-wakayama-local-event.jpg"
               alt="和歌山市の屋外イベント会場"
               loading="lazy"
             />
-            <figcaption class="gallery-caption">屋外イベント・地域祭り</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="assets/images/engagement-participation-moment.jpg"
-              alt="来場者への声掛けシーン"
-              loading="lazy"
-            />
-            <figcaption class="gallery-caption">参加を促す声掛け</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="assets/images/value-event-mc-speaking.jpg"
-              alt="ステージでのMC進行"
-              loading="lazy"
-            />
-            <figcaption class="gallery-caption">ステージ進行</figcaption>
-          </figure>
-          <figure class="gallery-item">
-            <img
-              src="assets/images/scenes-family-community-event.jpg"
-              alt="家族連れが集まるコミュニティイベント"
-              loading="lazy"
-            />
-            <figcaption class="gallery-caption">地域コミュニティイベント</figcaption>
-          </figure>
+          </div>
+          <div class="gallery-sub">
+            <figure>
+              <img
+                src="assets/images/engagement-participation-moment.jpg"
+                alt="参加者への声掛けシーン"
+                loading="lazy"
+              />
+              <figcaption class="gallery-caption">参加を促す声掛け</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="assets/images/value-event-mc-speaking.jpg"
+                alt="ステージでのMC進行"
+                loading="lazy"
+              />
+              <figcaption class="gallery-caption">ステージ進行</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="assets/images/scenes-family-community-event.jpg"
+                alt="家族連れが集まるコミュニティイベント"
+                loading="lazy"
+              />
+              <figcaption class="gallery-caption">地域コミュニティイベント</figcaption>
+            </figure>
+          </div>
         </div>
-        <!-- Phase2 で /works/ へのリンクを追加 -->
+        <!-- Phase2 で /works/ へのリンクを追加予定 -->
       </div>
     </section>
 
-    <!-- ─── 6. プロフィール導線 ────────────── -->
-    <section class="section section-alt" aria-labelledby="profile-heading">
-      <div class="container">
-        <div class="profile-strip" data-reveal>
-          <div class="profile-strip-img">
-            <img
-              src="assets/images/value-event-mc-speaking.jpg"
-              alt="イベントMC【ニックネーム】がステージでマイクを持ち進行する様子"
-              loading="lazy"
-            />
-          </div>
-          <div>
-            <span class="section-label">Profile</span>
-            <h2 class="section-heading" id="profile-heading">タカラ</h2>
-            <p style="color: var(--muted); margin-bottom: var(--s4);">
-              和歌山を拠点に活動するMC。<br>
-              まちのイベントを、記憶に残る時間にしたい。
+    <!-- ─── 5. 選ばれる理由 ────────────────── -->
+    <section class="section section-white" aria-labelledby="reasons-heading">
+      <div class="container" data-reveal>
+        <span class="section-label">Why KEY PRODUCE</span>
+        <h2 class="section-heading" id="reasons-heading">選ばれる理由</h2>
+
+        <div class="reasons-grid">
+
+          <article class="reason-card">
+            <svg class="reason-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <circle cx="20" cy="18" r="7" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M20 28c-8 0-13 4-13 7h26c0-3-5-7-13-7z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            </svg>
+            <h3 class="reason-title">地域密着の空気感</h3>
+            <p class="reason-body">
+              和歌山のまちを知っているからこそ、
+              場の雰囲気をつかむことができる。
             </p>
-            <a class="btn" href="profile/index.html">プロフィールを見る</a>
-          </div>
+          </article>
+
+          <article class="reason-card">
+            <svg class="reason-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <rect x="16" y="8" width="8" height="14" rx="4" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M11 22a9 9 0 0018 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <line x1="20" y1="31" x2="20" y2="36" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+            <h3 class="reason-title">「入る場」をつくる盛り上げ方</h3>
+            <p class="reason-body">
+              参加しやすい声掛けと流れで、
+              見ているだけの場を参加したくなる場へ。
+            </p>
+          </article>
+
+          <article class="reason-card">
+            <svg class="reason-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <rect x="8" y="10" width="24" height="22" rx="3" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M14 8v4M26 8v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M13 22l4 4 10-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3 class="reason-title">打ち合わせ〜フォローまで一貫対応</h3>
+            <p class="reason-body">
+              事前の台本作成からリハーサル・当日・
+              後日フォローアップまでサポート。
+            </p>
+          </article>
+
         </div>
       </div>
     </section>

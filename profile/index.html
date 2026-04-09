@@ -5,14 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- 屋号：確定後に差し替え -->
   <title>プロフィール | 【KEY PRODUCE】</title>
-  <meta name="description" content="和歌山を拠点に活動するイベントMC。地域のまちで、また来たいと思えるイベントをつくることが目標です。" />
+  <meta name="description" content="和歌山を拠点に活動するイベントMC・タカラのプロフィール。地域のまちで、また来たいと思えるイベントをつくることが目標です。" />
+
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/components.css" />
+
+  <style>
+    /* プロフィール写真：フルワイドに近い大きな表示 */
+    .profile-photo-wrap {
+      width: 100%;
+      max-height: 640px;
+      overflow: hidden;
+    }
+
+    .profile-photo-wrap img {
+      width: 100%;
+      height: 100%;
+      max-height: 640px;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+
+    /* 名前・肩書きブロック */
+    .profile-intro {
+      padding: 48px 0 0;
+      text-align: center;
+    }
+
+    /* 経歴セクション */
+    .career-wrap {
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .career-meta {
+      font-size: 0.9rem;
+      color: var(--color-muted);
+      margin: 0 0 8px;
+    }
+  </style>
 </head>
+
 <body>
   <a class="skip-link" href="#main">本文へスキップ</a>
 
@@ -20,61 +59,66 @@
 
   <main id="main">
 
-    <!-- ページタイトル -->
-    <div class="page-header">
-      <div class="container">
-        <span class="page-header-label">Profile</span>
-        <h1 class="page-header-title">プロフィール</h1>
-      </div>
+    <!-- ─── 1. 顔写真（大きく・Apple風） ──── -->
+    <div class="profile-photo-wrap">
+      <img
+        src="../assets/images/value-event-mc-speaking.jpg"
+        alt="イベントMC タカラがステージでマイクを持ち進行する様子"
+        loading="eager"
+        fetchpriority="high"
+      />
     </div>
 
-    <!-- 顔写真 ＋ ニックネーム -->
-    <section class="section">
+    <!-- ─── 2. ニックネーム・肩書き ─────── -->
+    <section class="section section-white" aria-label="プロフィール基本情報">
       <div class="container">
-        <div class="profile-hero-grid" data-reveal>
-          <div class="profile-img">
-            <img
-              src="../assets/images/value-event-mc-speaking.jpg"
-              alt="イベントMC【ニックネーム】がステージでマイクを持ち進行する様子"
-              loading="eager"
-            />
-          </div>
-          <div class="profile-info">
-            <h2 class="profile-name">タカラ</h2>
-            <p class="profile-role">イベントMC / 【KEY PRODUCE】<!-- 屋号：確定後に差し替え --></p>
-            <p>和歌山を拠点に、MCとしてイベントの場をつくっています。紀州のまちで、また来たいと思えるイベントを。</p>
-          </div>
+        <div class="profile-intro" data-reveal>
+          <span class="section-label">Profile</span>
+          <h1 class="profile-name">タカラ</h1>
+          <!-- 屋号：確定後に差し替え -->
+          <p class="profile-role">イベントMC / 【KEY PRODUCE】</p>
+          <p style="max-width: 44ch; margin: 0 auto; color: var(--color-muted); font-size: 0.97rem;">
+            和歌山を拠点に、MCとしてイベントの場をつくっています。<br>
+            紀州のまちで、また来たいと思えるイベントを。
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- キャッチコピー -->
-    <section class="section section-alt">
+    <!-- ─── 3. キャッチコピー ──────────── -->
+    <section class="section" aria-label="キャッチコピー">
       <div class="container" style="text-align: center;" data-reveal>
-        <p class="profile-catch">また来たいと思える、<br>まちのイベントをつくりたい。</p>
+        <p class="profile-catch">
+          また来たいと思える、<br>
+          まちのイベントをつくりたい。
+        </p>
       </div>
     </section>
 
-    <!-- 経歴・実績 -->
-    <section class="section" aria-labelledby="history-heading">
+    <!-- ─── 4. 経歴・実績 ─────────────── -->
+    <section class="section section-white" aria-labelledby="career-heading">
       <div class="container" data-reveal>
-        <span class="section-label">Career</span>
-        <h2 class="section-heading" id="history-heading">経歴・実績</h2>
-        <p style="color: var(--muted); margin-bottom: var(--s2);">MC経験：1〜3年</p>
-        <ul class="profile-history-list">
-          <li>企業イベント・式典</li>
-          <li>地域祭り・野外イベント</li>
-          <li>婚礼・パーティー</li>
-          <li>その他（スポーツ・マルシェ等）</li>
-        </ul>
+        <div class="career-wrap">
+          <span class="section-label">Career</span>
+          <h2 class="section-heading" id="career-heading">経歴・実績</h2>
+          <p class="career-meta">MC経験：1〜3年</p>
+          <ul class="profile-history-list">
+            <li>企業イベント・式典</li>
+            <li>地域祭り・野外イベント</li>
+            <li>婚礼・パーティー</li>
+            <li>その他（スポーツ・マルシェ等）</li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <!-- 地域への想い -->
-    <section class="section section-alt" aria-labelledby="message-heading">
+    <!-- ─── 5. 地域への想い ───────────── -->
+    <section class="section" aria-labelledby="message-heading">
       <div class="container" data-reveal>
-        <span class="section-label">Message</span>
-        <h2 class="section-heading" id="message-heading">地域への想い</h2>
+        <div style="text-align: center;">
+          <span class="section-label">Message</span>
+          <h2 class="section-heading" id="message-heading" style="text-align: center;">地域への想い</h2>
+        </div>
         <p class="profile-message">
           心に残る時間が、まちを好きにさせると思っています。<br>
           イベントが終わっても、また来たいと思ってもらえる場をつくること。<br>

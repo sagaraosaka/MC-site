@@ -6,13 +6,16 @@
   <!-- 屋号：確定後に差し替え -->
   <title>お問い合わせ | 【KEY PRODUCE】</title>
   <meta name="description" content="KEY PRODUCEへのお問い合わせ。イベントMCのご依頼・ご相談はこちらから。見積もり無料・3営業日以内にご返信します。" />
+
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/components.css" />
 </head>
+
 <body>
   <a class="skip-link" href="#main">本文へスキップ</a>
 
@@ -25,29 +28,106 @@
       <div class="container">
         <span class="page-header-label">Contact</span>
         <h1 class="page-header-title">お問い合わせ</h1>
-        <p class="page-header-lead">日程の仮確認だけでも大丈夫です。<br>内容が固まっていなくてもお気軽にどうぞ。</p>
+        <p class="page-header-lead">
+          初めての方でも安心してご相談いただけます。<br>
+          まずはお気軽にお問い合わせください。
+        </p>
       </div>
     </div>
 
-    <!-- フォーム（準備中） -->
+    <!-- フォーム -->
     <section class="section">
       <div class="container">
         <div class="contact-form-wrap" data-reveal>
-          <div class="contact-coming-soon">
-            <p class="contact-coming-soon-badge">Coming Soon</p>
-            <p class="contact-coming-soon-text">
-              お問い合わせフォームを準備中です。<br>
-              今しばらくお待ちください。
+
+          <!-- 送信後のサンクスメッセージ -->
+          <div class="form-thanks" id="form-thanks" role="alert" aria-live="polite" hidden>
+            <p style="font-size: 2rem; margin: 0 0 16px;">✓</p>
+            <h2 style="font-family: var(--font-serif); font-size: 1.5rem; font-weight: 600; margin: 0 0 12px;">
+              送信が完了しました
+            </h2>
+            <p style="color: var(--color-muted); margin: 0 0 32px;">
+              内容を確認の上、3営業日以内にご返信いたします。
             </p>
-            <!-- Instagram DM リンク（アカウント確定後に解除）
-            <div class="contact-coming-soon-note">
-              <p>お急ぎの方はInstagramのDMよりご連絡ください。</p>
-              <a class="btn btn-fill" href="https://instagram.com/【アカウント名】" target="_blank" rel="noopener">
-                Instagram DM で連絡する
-              </a>
+            <a class="btn btn-fill" href="../index.html">TOPへ戻る</a>
+          </div>
+
+          <!-- フォーム本体 -->
+          <!-- Google Form URL：作成後に【GOOGLE_FORM_URL】を差し替えてください -->
+          <form id="contact-form" action="【GOOGLE_FORM_URL】" method="POST">
+
+            <div class="form-group">
+              <label class="form-label" for="name">
+                お名前<span class="form-required">必須</span>
+              </label>
+              <input
+                class="form-input"
+                type="text"
+                id="name"
+                name="name"
+                required
+                autocomplete="name"
+                placeholder="例）山田 太郎"
+              />
             </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">
+                メールアドレス<span class="form-required">必須</span>
+              </label>
+              <input
+                class="form-input"
+                type="email"
+                id="email"
+                name="email"
+                required
+                autocomplete="email"
+                placeholder="例）example@mail.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="event-type">
+                イベントの種別<span class="form-required">必須</span>
+              </label>
+              <select class="form-select" id="event-type" name="event-type" required>
+                <option value="" disabled selected>選択してください</option>
+                <option value="企業イベント・式典">企業イベント・式典</option>
+                <option value="地域祭り・野外イベント">地域祭り・野外イベント</option>
+                <option value="婚礼・パーティー">婚礼・パーティー</option>
+                <option value="その他">その他</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">
+                お問い合わせ内容<span class="form-required">必須</span>
+              </label>
+              <textarea
+                class="form-textarea"
+                id="message"
+                name="message"
+                required
+                rows="5"
+                placeholder="イベントの概要・日程・ご質問などをご記入ください"
+              ></textarea>
+            </div>
+
+            <div style="text-align: center;">
+              <button class="form-submit" type="submit" style="max-width: 320px; margin: 0 auto;">
+                送信する
+              </button>
+            </div>
+
+          </form>
+
+          <div class="form-note">
+            内容を確認の上、<strong>3営業日以内</strong>にご返信いたします。<br>
+            <!-- Instagram DM リンク（アカウント確定後に解除）
+            お急ぎの場合はInstagramのDMよりご連絡ください。
             -->
           </div>
+
         </div>
       </div>
     </section>
@@ -57,5 +137,17 @@
   <div id="site-footer"></div>
 
   <script src="../js/main.js"></script>
+  <script>
+    // 送信後サンクスメッセージの表示
+    const form = document.getElementById("contact-form");
+    const thanks = document.getElementById("form-thanks");
+    if (form && thanks) {
+      form.addEventListener("submit", (e) => {
+        // Google Form はページ遷移するため、
+        // 送信完了の検知は Google Form のサンクスページで行う。
+        // 必要に応じてリダイレクト先に合わせて調整してください。
+      });
+    }
+  </script>
 </body>
 </html>
