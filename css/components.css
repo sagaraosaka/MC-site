@@ -148,7 +148,7 @@
 
 /* ── CTAセクション ────────────────────────── */
 .cta-section {
-  background: var(--color-sub);
+  background: var(--color-sub-light);
   padding: var(--section-gap) 0;
   text-align: center;
 }

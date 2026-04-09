@@ -5,15 +5,25 @@
 
 /* ── デザイントークン ─────────────────────── */
 :root {
-  /* Color */
-  --color-bg:      #F7F4EF;
-  --color-text:    #2F2F2F;
-  --color-accent:  #C86B3C;
-  --color-sub:     #8FA38F;
+  /* ベース */
+  --color-bg:        #F5F0E8;  /* 少し黄みがかったベージュ */
+  --color-bg-sub:    #EDE6D6;  /* セクション背景の切り替え用 */
+  --color-text:      #2A2520;  /* 少し茶みがかったほぼ黒 */
+  --color-text-sub:  #6B5F52;  /* サブテキスト・キャプション用 */
+
+  /* アクセント */
+  --color-accent:      #C07040;  /* テラコッタ寄りのオレンジ */
+  --color-accent-dark: #9A5830;  /* ホバー時・強調時 */
+  --color-sub:         #5C7A5C;  /* 深みのあるグリーン */
+  --color-sub-light:   #8FA882;  /* CTAセクション背景・薄いグリーン */
+
+  /* ボーダー・シャドウ */
+  --color-border:  #D8CFBF;
+  --color-shadow:  rgba(42, 37, 32, 0.08);
   --color-white:   #FFFFFF;
-  --color-border:  #E8E3DC;
-  --color-shadow:  rgba(0, 0, 0, 0.06);
-  --color-muted:   #6B6860;
+
+  /* 後方互換（--color-muted 参照箇所用エイリアス） */
+  --color-muted:   var(--color-text-sub);
 
   /* Typography */
   --font-serif:      'Noto Serif JP', serif;
@@ -214,8 +224,8 @@ a:hover {
 }
 
 .btn-fill:hover {
-  background: #b05e32;
-  border-color: #b05e32;
+  background: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
 }
 
 .btn-lg {
@@ -262,7 +272,7 @@ a:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(42, 37, 32, 0.4);
 }
 
 .hero-inner {
@@ -772,7 +782,7 @@ a:hover {
 }
 
 .form-submit:hover {
-  background: #b05e32;
+  background: var(--color-accent-dark);
   transform: translateY(-1px);
 }
 
